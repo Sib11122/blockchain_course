@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Assessment {
+    uint256 public val;
+
+    function set(uint256 _new) external {
+        // Use require() to validate conditions and revert if they are not met
+        require(_new > 0, "Value must be greater than 0");
+
+        // Use assert() for internal consistency checks (e.g., overflow)
+        assert(_new + val >= val);
+
+        // Set the new value
+        val = _new;
+    }
+
+    function Revert() external pure {
+        // Explicitly trigger a revert
+        revert("This transaction intentionally reverted");
+    }
+}
