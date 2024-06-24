@@ -3,7 +3,7 @@
 Implementation if require(),assert() and revert().
 
 ## Description
-In this Solidity assessment we have created a smart contract in which we have created a contract with name assessment and inside that contract first we have declared a public variable with name val that is global.
+In this Solidity assessment we have created a smart contract in which we have created a contract with name assessment and inside that contract first we have declared a public variable with name val.
 After that we have declared a function with name set and in which we are passing new value and this is public,now we have used require that will check the condition if the condtion is satisfied then only the process will execute else it will be reverted back.After that we have used the assert that will check internal conditions after the exectution of the program.In this assert we are _new + val should be greater than val if this condtion is satisfied than the new value will be assigned to val that is old value.In the last we have created a revert funtion that will just revert an error if some errors have been encountered.
 
 ## Getting Started
